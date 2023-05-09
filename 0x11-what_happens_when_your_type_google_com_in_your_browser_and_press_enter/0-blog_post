@@ -1,0 +1,37 @@
+
+
+Have you ever wondered what happens behind the scenes when you type https://www.google.com into your web browser and press Enter? In this blog post, we'll take a closer look at the different components that work together to deliver the website to your screen.
+
+DNS request
+
+The first step is to resolve the domain name into an IP address using the Domain Name System (DNS). Your browser sends a DNS request to a DNS server, which looks up the IP address associated with the domain name. If the DNS server doesn't have the IP address cached, it will make a request to another DNS server until it finds the IP address.
+
+TCP/IP
+
+Once your browser has the IP address, it opens a Transmission Control Protocol (TCP) connection to the web server at that address. The TCP protocol establishes a reliable connection between your browser and the web server.
+
+Firewall
+
+Before the connection is established, your request must pass through your computer's firewall. If your firewall is configured to allow outbound connections, the request is allowed to proceed. Otherwise, the request is blocked.
+
+HTTPS/SSL
+
+When the connection is established, your browser and the web server negotiate a secure connection using the HTTPS protocol, which uses the Secure Sockets Layer (SSL) or Transport Layer Security (TLS) protocol to encrypt data. This ensures that any data transmitted between your browser and the server is encrypted and cannot be intercepted by third parties.
+
+Load-balancer
+
+If the website you're trying to access is hosted on multiple servers, a load-balancer may be used to distribute incoming traffic across these servers to improve performance and ensure that no single server becomes overwhelmed with traffic.
+
+Web server
+
+The web server is responsible for serving web pages to your browser. When your request arrives, the web server retrieves the requested web page from its storage location and sends it back to your browser over the secure connection.
+
+Application server
+
+If the website has dynamic content, such as a search function or user login, the web server may forward the request to an application server. The application server runs the code necessary to generate the dynamic content and returns the results to the web server, which then sends them back to your browser.
+
+Database
+
+If the dynamic content requires data from a database, the application server will retrieve that data from the database server before generating the content. The database server stores the website's data, such as user profiles, product listings, or blog posts.
+
+In conclusion, when you type https://www.google.com into your web browser and press Enter, a series of complex interactions happen behind the scenes. From resolving the domain name to negotiating a secure connection, to serving web pages, generating dynamic content, and retrieving data from a database, it's a complex system working together to deliver the website to your screen. Understanding these interactions can help you diagnose and troubleshoot issues when something goes wrong.
